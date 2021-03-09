@@ -1,0 +1,114 @@
+{
+  "Header": {
+    "title": "Lending Katalyst",
+    "paragraph": "We simplify the hassle of collateral Title Search Report by providing an instant-on the go decision with zero physical intervention in the journey of secured lending from financial institutions."
+  },
+  "Whatwedo": {
+    "caption": "Changing the Game",
+    "content": [
+      "We are a financial technology startup leveraging new age technology to disrupt the long-standing manual procedure that has been plaguing the banking industry.",
+      "With Lending Katalyst, we simplify the hassle of collateral Title Search Report by providing an instant-on the go decision with zero physical intervention in the journey of secured lending from financial institutions."
+    ]
+  },
+  "OurTech": {
+    "caption": "The Possibilities Are Endless",
+    "content": [
+      "At Lending Katalyst, we serve our clients through our encrypted dedicated platform using Blockchain technology to provide an easy access to property record and an instant decision on whether the property is a fit for mortgage/collateral in your journey of lending.",
+      "This decision is made possible with our unique Artificial Intelligence and Machine Learning algorithm.",
+      "With strong command over these technologies, we are on a mission to disrupt across the value chain of secured lending."
+    ]
+  },
+  "Services": [
+    {
+      "icon": "fa fa-wordpress",
+      "name": "Lorem ipsum dolor",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-cart-arrow-down",
+      "name": "Consectetur adipiscing",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-cloud-download",
+      "name": "Lorem ipsum dolor",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-language",
+      "name": "Consectetur adipiscing",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-plane",
+      "name": "Lorem ipsum dolor",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-pie-chart",
+      "name": "Consectetur adipiscing",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    }
+  ],
+  "Testimonials": [
+    {
+      "img": "img/testimonials/01.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/02.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/03.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/04.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/05.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/06.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    }
+  ],
+  "Team": [
+    {
+      "img": "img/team/john2.jpg",
+      "name": "JOHN B PAO",
+      "job": "Founder"
+    },
+    {
+      "img": "img/team/akshay2.jpg",
+      "name": "AKSHAY KAMTHAN",
+      "job": "Co-Founder"
+    }
+  ],
+  "Contact": {
+    "address": "Building No 20, Customs Colony, Marol, Andheri East, Mumbai - 400059",
+    "phone": "+1 123 456 1234",
+    "email": "social.lendingkatalyst@gmail.com",
+    "facebook": "https://www.facebook.com/LendingKatalyst/",
+    "twitter": "https://twitter.com/LendingKatalyst",
+    "instagram": "https://www.instagram.com/lending_katalyst/",
+    "linkedin": "https://www.linkedin.com/company/lending-katalyst/"
+  },
+  "Ourstory": {
+    "caption": "The Beginning",
+    "content": [
+      "Lending Katalyst was born out of curiosity. The inquisitive and customer obsession nature of being a Product Manager saw the technological gap in the banking industry. This led the team to crack the code to bridge the gap. This strong desire of going beyond the conventional practice gave us the purpose to what we are today.",
+      "With a clear vision in mind, we are a team of passionate entrepreneurs ready to take on the challenge and face the uncertainty.",
+      "If you have the same passion and would like to be a part of this journey, kindly fill out the details in the 'Get In Touch' section. We would love to have you on-board."
+    ]
+  }
+}
