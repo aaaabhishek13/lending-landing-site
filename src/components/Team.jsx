@@ -24,7 +24,11 @@ export class Team extends Component {
                         className="team-img"
                       />
                       <div className="caption">
-                        <h4>{d.name}</h4>
+                        <a target="_blank" href={d.profile}>
+                          <h4 style={{ textDecoration: "underline" }}>
+                            {d.name}
+                          </h4>
+                        </a>
                         <p>{d.job}</p>
                       </div>
                     </div>

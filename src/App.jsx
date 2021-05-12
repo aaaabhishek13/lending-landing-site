@@ -24,7 +24,6 @@ export class App extends Component {
   }
 
   render() {
-    console.log(this.state.landingPageData);
     return (
       <div>
         <Navigation />

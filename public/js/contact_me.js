@@ -17,13 +17,14 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: "http://35.223.113.140:8080/email",
                 type: "POST",
-                data: {
+                data: JSON.stringify({
                     name: name,
                     email: email,
                     message: message
-                },
+                }),
+                contentType: "application/json; charset=utf-8",
                 cache: false,
                 success: function() {
                     // Success message

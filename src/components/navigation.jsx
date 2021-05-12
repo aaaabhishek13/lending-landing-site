@@ -18,8 +18,23 @@ export class Navigation extends Component {
               <span className="icon-bar"></span>{" "}
               <span className="icon-bar"></span>{" "}
             </button>
-            <a className="navbar-brand page-scroll" href="#page-top">
-              Lending <span style={{ fontWeight: 700 }}>Katalyst</span>
+            <a
+              className="navbar-brand page-scroll"
+              href="#page-top"
+              style={{ padding: 0 }}
+            >
+              <img
+                alt="Brand"
+                src="img/logo2.png"
+                style={{
+                  marginRight: 10,
+                  height: "inherit",
+                  display: "inline",
+                }}
+              />
+              <span className="hidden-xs">
+                Lending <span style={{ fontWeight: 700 }}>Katalyst</span>
+              </span>
             </a>{" "}
           </div>
 

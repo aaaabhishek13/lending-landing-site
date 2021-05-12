@@ -86,16 +86,18 @@
     {
       "img": "img/team/john2.jpg",
       "name": "JOHN B PAO",
-      "job": "Founder"
+      "job": "Founder",
+      "profile": "https://www.linkedin.com/in/12345-abc/"
     },
     {
-      "img": "img/team/akshay2.jpg",
-      "name": "AKSHAY KAMTHAN",
-      "job": "Co-Founder"
+      "img": "img/team/abhi2.jpeg",
+      "name": "ABHISHEK SOMASHEKAR",
+      "job": "Co-Founder",
+      "profile": "https://www.linkedin.com/in/abhishek-somashekar-46091a129/"
     }
   ],
   "Contact": {
-    "address": "Building No 20, Customs Colony, Marol, Andheri East, Mumbai - 400059",
+    "address": "Building 73, 17th B Main, HAL 2nd Stage, Indiranagar, Bangalore - 560008.",
     "phone": "+1 123 456 1234",
     "email": "social.lendingkatalyst@gmail.com",
     "facebook": "https://www.facebook.com/LendingKatalyst/",

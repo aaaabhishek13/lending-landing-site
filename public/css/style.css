@@ -214,6 +214,7 @@ a:focus,
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  height: 50%;
 }
 .intro .overlay {
   background: rgba(0, 0, 0, 0.2);
@@ -221,7 +222,7 @@ a:focus,
 .intro h1 {
   font-family: "Raleway", sans-serif;
   color: #fff;
-  font-size: 82px;
+  font-size: 60px;
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 0;

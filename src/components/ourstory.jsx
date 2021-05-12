@@ -5,15 +5,14 @@ export class OurStory extends Component {
     return (
       <div id="ourstory" className="text-center">
         <div className="container">
-          <div className="col-md-10 col-md-offset-1 section-title">
+          <div className="col-xs-12 section-title">
             <h2>OUR STORY</h2>
-            <h3>{this.props.data
-              ? this.props.data.caption : "Loading..."}</h3>
+            <h3>{this.props.data ? this.props.data.caption : "Loading..."}</h3>
           </div>
           <div className="row">
             {this.props.data
-              ? this.props.data.content.map((d,i) => (
-                  <div  key={`${i}`} className="col-xs-12">
+              ? this.props.data.content.map((d, i) => (
+                  <div key={`${i}`} className="col-xs-12">
                     {" "}
                     <p>{d}</p>
                   </div>
