@@ -1,0 +1,69 @@
+.cardd2 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  justify-content: center;
+  height: 79%;
+  width: fit-content;
+
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+}
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+}
+
+.signup--btn {
+  background: blue;
+  border-radius: 12px;
+  margin-top: 10px;
+  margin-left: 9rem;
+  position: relative;
+}
+label {
+  font-family: "Poppins", sans-serif;
+  margin-top: 10px;
+  font-size: larger;
+  font-weight: bold;
+}
+.form-control {
+  padding: 10px;
+  border-radius: 10px;
+}
+.signup--card--body {
+  padding: 20px 10px 10px 10px;
+}
+@media only screen and (min-width: 780px) {
+  .cardd2 {
+    margin-top: 30px;
+    height: 100%;
+    margin-bottom: 40rem;
+    width: fit-content;
+  }
+  .signup--card--body {
+    padding: 7rem;
+    padding-top: 4rem;
+    height: 100%;
+  }
+  .signup--btn {
+    margin-left: inherit;
+    font-size: large;
+    height: 58px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .form-control {
+    font-size: large;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  label {
+    margin-top: 10px;
+    font-size: x-large;
+    font-weight: bold;
+  }
+  .link--url {
+    font-size: large;
+  }
+}
