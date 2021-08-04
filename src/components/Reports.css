@@ -23,8 +23,9 @@
   font-size: 10px;
 }
 .download--img {
+  margin-left: 5rem;
   height: 20%;
-  width: 100%;
+  width: 80%;
 }
 .home {
   background: #f2f5f8;
@@ -40,15 +41,27 @@
   border-radius: 20px;
 }
 .report--section {
+  margin-left: -5rem;
+  padding: 1rem;
   background: white;
+  width: 30rem;
   border-radius: 20px;
   box-shadow: 0 5px 10px rgba(114, 120, 141, 0.05),
     0 15px 40px rgba(123, 128, 151, 0.2);
+  margin-bottom: 5rem;
 }
 .remarks--section {
 }
 .home {
   background: #060a19;
+}
+.report--title {
+  font-size: xx-large;
+  margin-left: 2rem;
+}
+.report--desc {
+  font-family: "poppins";
+  margin-left: 2rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -72,6 +85,16 @@
 
     width: inherit;
     height: fit-content;
+  }
+  .report--section {
+    margin-left: 0rem;
+    padding: 0rem;
+    background: white;
+    width: auto;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(114, 120, 141, 0.05),
+      0 15px 40px rgba(123, 128, 151, 0.2);
+    margin-bottom: 0rem;
   }
   .report--title {
     font-size: xx-large;
