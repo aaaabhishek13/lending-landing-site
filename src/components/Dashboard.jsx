@@ -1,13 +1,17 @@
 import React, { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import { Card, Button, Row, Col, Image } from "react-bootstrap";
 // import { useAuth } from "../contexts/AuthContext";
 import { Link, useHistory } from "react-router-dom";
+import { authActions } from "../store/auth";
 import BarChart from "./BarChart";
 import "./dashboard.css";
 import reportIcon from "../assets/report.png";
 import resultIcon from "../assets/result.png";
 
 export default function Dashboard() {
+  const dispatch = useDispatch();
+  const isAuth = useSelector((state) => state.auth.isAuthenticated);
   const [error, setError] = useState("");
   const { logout } = true;
   const history = useHistory();
@@ -17,6 +21,7 @@ export default function Dashboard() {
 
     try {
       //await logout();
+      dispatch(authActions.logout());
       history.push("/login");
     } catch {
       setError("Failed to log out");
@@ -33,15 +38,26 @@ export default function Dashboard() {
       setError("Failed to load Page");
     }
   }
+  function handleReport() {
+    // setError("");
+    // history.push("/reports");
+
+    try {
+      //await logout();
+      history.push("/reports");
+    } catch {
+      setError("Failed to load Page");
+    }
+  }
 
   return (
-    <>
-      <div className=" dashboard  ">
-        <div>
+    <div className="page">
+      <div>
+        <div className=" dashboard  ">
           <Col xs={12} md={8}>
             <h1 className="dashboard--title">Hi, Welcome,</h1>
             <br />
-            <h1>
+            <h1 className="dashboard--desc">
               Simplify the hassle of collateral Title Search Report by providing
               an instant-on the go decision with zero physical intervention in
               the journey of secured lending from financial institutions.
@@ -54,12 +70,14 @@ export default function Dashboard() {
             </Button>
           </Col>
           <Col xs={6} md={4}>
-            <BarChart />
+            <Card className="chart">
+              <BarChart />
+            </Card>
           </Col>
         </div>
       </div>
-      <div>
-        <Col xs={6} md={4}>
+      <div className="dashboard--controls ">
+        <Col xs={12} md={8}>
           <Card className="tsr">
             <Card.Body className="tsr--card--body">
               <Row>
@@ -82,45 +100,26 @@ export default function Dashboard() {
             </Card.Body>
           </Card>
         </Col>
-        <Col xs={6} md={3}>
+        <Col xs={6} md={4}>
           <Card className="status">
             <Card.Body className="status--card--body">
               <Row>
                 <Image src={resultIcon} className="report--icon" />
               </Row>
-              <h3 className="card--title">Verification Status</h3>
+              <h3 className="card--title">Past Report</h3>
               <h3 className="card--desc">
-                Check your verification status in just one click
+                Check your current and past reports in just one click
               </h3>
-              <Button className="btn btn-custom btn-lg page-scroll status--btn">
+              <Button
+                className="btn btn-custom btn-lg page-scroll status--btn"
+                onClick={handleReport}
+              >
                 Check
               </Button>
             </Card.Body>
           </Card>
         </Col>
-        <Col xs={6} md={4}>
-          <Card className="logout">
-            <Card.Body className="logout--card--body">
-              <h3 className=" logout--card--title">Logout</h3>
-              <h3 className=" logout--card--desc">Logout from session</h3>
-              <Button
-                className="btn btn-custom btn-lg page-scroll logout--btn"
-                onClick={handleLogout}
-              >
-                Log Out
-              </Button>
-            </Card.Body>
-          </Card>
-        </Col>
       </div>
-      {/* <div className="w-100 text-center mt-2">
-        <Button variant="link" onClick={handleLogout}>
-          Log Out
-        </Button>
-      </div> */}
-      {/* <div className="container cardd">
-        <h2>Hello this is dashboard</h2>
-      </div> */}
-    </>
+    </div>
   );
 }

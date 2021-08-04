@@ -1,21 +1,29 @@
 {
   "Header": {
     "title": "Lending Katalyst",
-    "paragraph": "We simplify the hassle of collateral Title Search Report by providing an instant-on the go decision with zero physical intervention in the journey of secured lending from financial institutions."
+    "paragraph": "We simplify the hassle of tracing the title of your property in securing a collateral loan."
+  },
+  "Ourstory": {
+    "caption": "The Beginning",
+    "content": [
+      "Lending Katalyst was born out of curiosity. The inquisitive and customer-focused nature of the founders saw the technological gap in the banking industry. This strong desire of going beyond the conventional practice gave us the purpose to what we are today.",
+      "With a clear vision in mind, we are a team of passionate entrepreneurs ready to take on the challenge and face the uncertainty.",
+      "If you have the same passion and would like to be a part of this journey, kindly fill out your details in the 'Get In Touch’ section. We would love to have you on board."
+    ]
   },
   "Whatwedo": {
-    "caption": "Changing the Game",
+    "caption": "Changing the Status Quo",
     "content": [
-      "We are a financial technology startup leveraging new age technology to disrupt the long-standing manual procedure that has been plaguing the banking industry.",
-      "With Lending Katalyst, we simplify the hassle of collateral Title Search Report by providing an instant-on the go decision with zero physical intervention in the journey of secured lending from financial institutions."
+      "We are a legal tech start-up leveraging new-age technology to disrupt the long-standing manual procedure in tracing the title of a property.",
+      "With Lending Katalyst, we simplify this hassle of preparing a Title Search Report by providing an instant, unbiased decision with zero physical intervention in the journey of securing a home loan or mortgage loan from financial institutions."
     ]
   },
   "OurTech": {
-    "caption": "The Possibilities Are Endless",
+    "caption": "An Instant Solution",
     "content": [
-      "At Lending Katalyst, we serve our clients through our encrypted dedicated platform using Blockchain technology to provide an easy access to property record and an instant decision on whether the property is a fit for mortgage/collateral in your journey of lending.",
-      "This decision is made possible with our unique Artificial Intelligence and Machine Learning algorithm.",
-      "With strong command over these technologies, we are on a mission to disrupt across the value chain of secured lending."
+      "At Lending Katalyst, we serve our clients through our dedicated portal by providing an instant, unbiased consolidated title report stating whether the property is fit for collateral or not in your journey of collateral loan.",
+      "This instant decision is made possible with our state-of-the-art Artificial Intelligence and Machine Learning algorithm.",
+      "With a strong command over this technology, we are on a mission to disrupt collateral lending."
     ]
   },
   "Services": [
@@ -86,7 +94,7 @@
     {
       "img": "img/team/john2.jpg",
       "name": "JOHN B PAO",
-      "job": "Founder",
+      "job": "Co-Founder",
       "profile": "https://www.linkedin.com/in/12345-abc/"
     },
     {
@@ -104,13 +112,5 @@
     "twitter": "https://twitter.com/LendingKatalyst",
     "instagram": "https://www.instagram.com/lending_katalyst/",
     "linkedin": "https://www.linkedin.com/company/lending-katalyst/"
-  },
-  "Ourstory": {
-    "caption": "The Beginning",
-    "content": [
-      "Lending Katalyst was born out of curiosity. The inquisitive and customer obsession nature of being a Product Manager saw the technological gap in the banking industry. This led the team to crack the code to bridge the gap. This strong desire of going beyond the conventional practice gave us the purpose to what we are today.",
-      "With a clear vision in mind, we are a team of passionate entrepreneurs ready to take on the challenge and face the uncertainty.",
-      "If you have the same passion and would like to be a part of this journey, kindly fill out the details in the 'Get In Touch' section. We would love to have you on-board."
-    ]
   }
 }

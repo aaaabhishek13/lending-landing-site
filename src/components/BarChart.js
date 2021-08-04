@@ -6,12 +6,12 @@ import "./BarChart.css";
 // some of this code is a variation on https://jsfiddle.net/cmyker/u6rr5moq/
 
 const data = {
-  labels: ["Delhi", "Mumbai", "Bengalore"],
+  labels: ["Delhi", "Mumbai", "Bengalore", "Chennai"],
   datasets: [
     {
-      data: [30, 30, 15],
-      backgroundColor: ["#262A53", "#FFE3E3", "#FFA0A0", "#628395"],
-      hoverBackgroundColor: ["#FF6384", "#36A2EB", "#FFCE56"],
+      data: [10, 30, 25, 35],
+      backgroundColor: ["#F4EEFF", "#DCD6F7", "#A6B1E1", "#424874"],
+      borderColor: "#ffffff",
     },
   ],
 
@@ -36,22 +36,35 @@ class BarChart extends React.Component {
             maintainAspectRatio: false,
             elements: {
               center: {
-                legend: { display: true, position: "right" },
+                legend: {
+                  //display: false,
+                  position: "right",
+                  labels: { color: "#f00" },
+                },
                 text: "Red is 2/3 the total numbers",
-                color: "#FF6384", // Default is #000000
+                color: "#000000", // Default is #000000
                 fontStyle: "Arial", // Default is Arial
                 sidePadding: 20, // Default is 20 (as a percentage)
                 minFontSize: 40, // Default is 20 (in px), set to false and text will not wrap.
                 lineHeight: 40, // Default is 25 (in px), used for when text wraps
               },
             },
+
             plugins: {
               title: {
                 display: true,
-                text: "Stats Major Cities",
+                text: "Stats of Title Report Generation",
                 align: "center",
+                color: "#ffffff",
                 font: {
                   size: 20,
+                },
+              },
+              legend: {
+                display: true,
+
+                labels: {
+                  color: "#fff",
                 },
               },
             },

@@ -1,0 +1,126 @@
+.background {
+  margin-top: -1rem;
+}
+.report {
+  margin-top: 0rem;
+  padding-top: 3rem;
+  padding: 7rem;
+  height: fit-content;
+  width: inherit;
+  border-radius: 20px;
+  background: #f2f5f8;
+}
+.report--title {
+  font-size: x-large;
+  margin-left: auto;
+}
+.report--btn {
+  background: #c400ff;
+  padding: 2rem;
+  margin-top: 30px;
+  margin-left: 26%;
+  border-radius: 60px;
+  font-size: 10px;
+}
+.download--img {
+  margin-left: 5rem;
+  height: 20%;
+  width: 80%;
+}
+.home {
+  background: #f2f5f8;
+  margin-top: 3rem;
+
+  border-radius: 20px;
+}
+.logout2 {
+  background: #091c45;
+  color: white;
+  margin-top: 3rem;
+
+  border-radius: 20px;
+}
+.report--section {
+  margin-left: -5rem;
+  padding: 1rem;
+  background: white;
+  width: 30rem;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(114, 120, 141, 0.05),
+    0 15px 40px rgba(123, 128, 151, 0.2);
+  margin-bottom: 5rem;
+}
+.remarks--section {
+}
+.home {
+  background: #060a19;
+}
+.report--title {
+  font-size: xx-large;
+  margin-left: 2rem;
+}
+.report--desc {
+  font-family: "poppins";
+  margin-left: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .report {
+    align-items: center;
+    justify-content: center;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    width: inherit;
+    margin-top: 0rem;
+    height: 70rem;
+    padding: 6rem;
+    border-radius: 20px;
+    background: #f2f5f8;
+  }
+  .report--controls {
+    margin-left: 9rem;
+    margin-right: 9rem;
+    align-items: center;
+    justify-content: center;
+
+    width: inherit;
+    height: fit-content;
+  }
+  .report--section {
+    margin-left: 0rem;
+    padding: 0rem;
+    background: white;
+    width: auto;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(114, 120, 141, 0.05),
+      0 15px 40px rgba(123, 128, 151, 0.2);
+    margin-bottom: 0rem;
+  }
+  .report--title {
+    font-size: xx-large;
+    margin-left: 5rem;
+  }
+  .report--desc {
+    font-family: "poppins";
+    margin-left: 5rem;
+  }
+  .report--btn {
+    margin-left: 40%;
+    background: #c400ff;
+    padding: 2rem;
+    width: fit-content;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    font-size: 14;
+    font-family: inherit;
+  }
+  .download--img {
+    height: 70%;
+    width: 100%;
+  }
+  .home {
+  }
+  .logout2 {
+  }
+}
