@@ -2,9 +2,8 @@
   margin-top: 50px;
   margin-bottom: 20px;
   justify-content: center;
-  height: 79%;
+  height: fit-content;
   width: fit-content;
-
   border-radius: 20px;
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
     0 15px 40px rgba(166, 173, 201, 0.2);
@@ -20,6 +19,10 @@ h2 {
   margin-top: 10px;
   margin-left: 9rem;
   position: relative;
+}
+.fade {
+  opacity: 1;
+  color: red;
 }
 label {
   font-family: "Poppins", sans-serif;
@@ -37,9 +40,9 @@ label {
 @media only screen and (min-width: 780px) {
   .cardd2 {
     margin-top: 30px;
-    height: 100%;
-    margin-bottom: 40rem;
-    width: fit-content;
+    margin-left: 30rem;
+    width: 50rem;
+    height: fit-content;
   }
   .signup--card--body {
     padding: 7rem;
@@ -48,8 +51,8 @@ label {
   }
   .signup--btn {
     margin-left: inherit;
-    font-size: large;
-    height: 58px;
+    margin-top: 2rem;
+    height: 4rem;
     width: 100%;
     margin-bottom: 10px;
   }

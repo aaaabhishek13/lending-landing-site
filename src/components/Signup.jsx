@@ -1,9 +1,21 @@
 import React, { useRef, useState } from "react";
+import { useDispatch } from "react-redux";
+import { authActions } from "../store/auth";
 import { Form, Button, Card, Alert } from "react-bootstrap";
 
 import { Link, useHistory } from "react-router-dom";
 import "./Signup.css";
+
+const isEmpty = (value) => value.trim() === "";
+
 export default function Signup() {
+  const dispatch = useDispatch();
+  //const signup = true;
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
+  const history = useHistory();
+
+  //refs
   const userNameRef = useRef();
   const organizationRef = useRef();
   const designationRef = useRef();
@@ -11,10 +23,6 @@ export default function Signup() {
   const emailRef = useRef();
   const passwordRef = useRef();
   const passwordConfirmRef = useRef();
-  const signup = true;
-  const [error, setError] = useState("");
-  const [loading, setLoading] = useState(false);
-  const history = useHistory();
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -27,6 +35,7 @@ export default function Signup() {
       setError("");
       setLoading(true);
       //await signup(emailRef.current.value, passwordRef.current.value);
+      dispatch(authActions.login());
       history.push("/dashboard");
     } catch {
       setError("Failed to create an account");
@@ -37,12 +46,12 @@ export default function Signup() {
 
   return (
     <>
-      <div className="container cardd2">
-        <Card>
+      <div className="container ">
+        <Card className="cardd2">
           <Card.Body className="signup--card--body">
             <h2 className="text-center mb-4">Sign Up</h2>
             {error && <Alert variant="danger">{error}</Alert>}
-            <Form onSubmit={handleSubmit}>
+            <Form noValidate onSubmit={handleSubmit}>
               <Form.Group id="userame">
                 <Form.Label>Full Name</Form.Label>
                 <Form.Control
@@ -91,6 +100,7 @@ export default function Signup() {
               <Form.Group id="password">
                 <Form.Label>Password</Form.Label>
                 <Form.Control
+                  isInvalid={error}
                   type="password"
                   placeholder="Please enter your password"
                   ref={passwordRef}

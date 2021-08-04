@@ -7,12 +7,12 @@ import undraw from "../assets/undraw_House_searching_re_stk8.svg";
 export default function Forms() {
   const history = useHistory();
   const submitHandler = () => {
-    history.push("/dashboard");
+    history.push("/reports");
   };
   return (
     <>
-      <div className="container cardd3">
-        <Card>
+      <div className="container ">
+        <Card className="cardd3">
           <Card.Body className="form--card--body">
             <Image src={undraw} fluid className="forms--img" />
             <h1 className="text-center mb-4">
@@ -48,10 +48,10 @@ export default function Forms() {
                 />
               </Form.Group>
               <Form.Group id="survey">
-                <Form.Label>Survey No.</Form.Label>
+                <Form.Label>Survey Number</Form.Label>
                 <Form.Control
                   type="number"
-                  placeholder="Enter your khata number"
+                  placeholder="Enter your survey number"
                   required
                 />
               </Form.Group>
