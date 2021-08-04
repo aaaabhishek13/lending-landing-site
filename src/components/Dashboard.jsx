@@ -51,7 +51,7 @@ export default function Dashboard() {
   }
 
   return (
-    <>
+    <div className="page">
       <div>
         <div className=" dashboard  ">
           <Col xs={12} md={8}>
@@ -70,12 +70,14 @@ export default function Dashboard() {
             </Button>
           </Col>
           <Col xs={6} md={4}>
-            <BarChart />
+            <Card className="chart">
+              <BarChart />
+            </Card>
           </Col>
         </div>
       </div>
       <div className="dashboard--controls ">
-        <Col xs={6} sm={4} md={4}>
+        <Col xs={12} md={8}>
           <Card className="tsr">
             <Card.Body className="tsr--card--body">
               <Row>
@@ -98,15 +100,15 @@ export default function Dashboard() {
             </Card.Body>
           </Card>
         </Col>
-        <Col xs={6} sm={4} md={4}>
+        <Col xs={6} md={4}>
           <Card className="status">
             <Card.Body className="status--card--body">
               <Row>
                 <Image src={resultIcon} className="report--icon" />
               </Row>
-              <h3 className="card--title">Verification Status</h3>
+              <h3 className="card--title">Past Report</h3>
               <h3 className="card--desc">
-                Check your verification status in just one click
+                Check your current and past reports in just one click
               </h3>
               <Button
                 className="btn btn-custom btn-lg page-scroll status--btn"
@@ -117,21 +119,7 @@ export default function Dashboard() {
             </Card.Body>
           </Card>
         </Col>
-        <Col xs={6} sm={4} md={4}>
-          <Card className="logout">
-            <Card.Body className="logout--card--body">
-              <h3 className=" logout--card--title">Logout</h3>
-              <h3 className=" logout--card--desc">Logout from session</h3>
-              <Button
-                className="btn btn-custom btn-lg page-scroll logout--btn"
-                onClick={handleLogout}
-              >
-                Log Out
-              </Button>
-            </Card.Body>
-          </Card>
-        </Col>
       </div>
-    </>
+    </div>
   );
 }

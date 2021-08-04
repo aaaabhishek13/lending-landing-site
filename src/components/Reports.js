@@ -44,26 +44,38 @@ export default function Reports() {
       <div className="background">
         <div>
           <div className=" report">
-            <Row>
-              <h1 className="report--title">Reports & Remarks:</h1>
-            </Row>
-            <Row>
-              <Image src={downloadImg} className="download--img" />
-            </Row>
-            <Row>
-              <Button
-                className="btn btn-custom btn-lg report--btn"
-                onClick={handleForm}
-              >
-                Download{" "}
-                <span>
-                  <i class="fa fa-arrow-down"></i>
-                </span>
-              </Button>
-            </Row>
+            <Col xs={12} md={8}>
+              <Card className="report--section">
+                <Row>
+                  <h1 className="report--title">Reports:</h1>
+                </Row>
+                <Row>
+                  <Image src={downloadImg} className="download--img" />
+                </Row>
+                <Row>
+                  <Button
+                    className="btn btn-custom btn-lg report--btn"
+                    onClick={handleForm}
+                  >
+                    Download{" "}
+                    <span>
+                      <i class="fa fa-arrow-down"></i>
+                    </span>
+                  </Button>
+                </Row>
+              </Card>
+            </Col>
+            <Col xs={6} md={4}>
+              <Card className="remarks--section">
+                <h1 className="report--title">Remarks:</h1>
+                <h3 className="report--desc">
+                  Based on your reports remarks will be shown here
+                </h3>
+              </Card>
+            </Col>
           </div>
         </div>
-        <div className="dashboard--controls ">
+        <div className="report--controls ">
           <Col xs={12} md={8}>
             <Card className="home">
               <Card.Body className="tsr--card--body">
