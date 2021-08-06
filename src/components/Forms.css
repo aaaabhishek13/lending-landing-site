@@ -28,7 +28,8 @@ label {
   font-weight: bold;
 }
 .form-control {
-  padding: 10px;
+  padding: 1rem;
+  height: fit-content;
   border-radius: 10px;
 }
 
@@ -60,7 +61,8 @@ label {
   }
   .form-control {
     font-size: large;
-    padding: 20px;
+    height: fit-content;
+    padding: 1rem;
     border-radius: 10px;
   }
   label {

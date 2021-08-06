@@ -6,11 +6,11 @@ import "./BarChart.css";
 // some of this code is a variation on https://jsfiddle.net/cmyker/u6rr5moq/
 
 const data = {
-  labels: ["Delhi", "Mumbai", "Bengalore", "Chennai"],
+  labels: ["Mumbai", "Bengalore", "Chennai"],
   datasets: [
     {
-      data: [10, 30, 25, 35],
-      backgroundColor: ["#F4EEFF", "#DCD6F7", "#A6B1E1", "#424874"],
+      data: [20, 60, 20],
+      backgroundColor: ["#F55C47", "#126E82", "#45526C", "#424874"],
       borderColor: "#ffffff",
     },
   ],
@@ -55,7 +55,7 @@ class BarChart extends React.Component {
                 display: true,
                 text: "Stats of Title Report Generation",
                 align: "center",
-                color: "#ffffff",
+                color: "#292727",
                 font: {
                   size: 20,
                 },
@@ -64,7 +64,7 @@ class BarChart extends React.Component {
                 display: true,
 
                 labels: {
-                  color: "#fff",
+                  color: "#292727",
                 },
               },
             },

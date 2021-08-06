@@ -1,6 +1,3 @@
-.background {
-  margin-top: -1rem;
-}
 .report {
   margin-top: 0rem;
   padding-top: 3rem;
@@ -23,7 +20,7 @@
   font-size: 10px;
 }
 .download--img {
-  margin-left: 5rem;
+  margin-left: 3rem;
   height: 20%;
   width: 80%;
 }
@@ -51,9 +48,24 @@
   margin-bottom: 5rem;
 }
 .remarks--section {
+  background: white;
+  border-radius: 12px;
+  margin-left: -5rem;
+  height: 30rem;
+  width: 30rem;
+  padding: 3rem;
+
+  box-shadow: 0 5px 10px rgba(114, 120, 141, 0.05),
+    0 15px 40px rgba(123, 128, 151, 0.2);
 }
+
 .home {
-  background: #060a19;
+  background: #082032;
+}
+.home--card--title {
+  color: white;
+  font-size: large;
+  font-weight: bolder;
 }
 .report--title {
   font-size: xx-large;
@@ -65,6 +77,9 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .background {
+    margin-top: 3rem;
+  }
   .report {
     align-items: center;
     justify-content: center;
@@ -72,7 +87,7 @@
     margin-right: 10rem;
     width: inherit;
     margin-top: 0rem;
-    height: 70rem;
+    height: 78rem;
     padding: 6rem;
     border-radius: 20px;
     background: #f2f5f8;
@@ -105,22 +120,46 @@
     margin-left: 5rem;
   }
   .report--btn {
-    margin-left: 40%;
+    margin-left: -3rem;
+
     background: #c400ff;
     padding: 2rem;
     width: fit-content;
-    margin-top: 20px;
+    margin-top: 20rem;
     margin-bottom: 20px;
     border-radius: 12px;
-    font-size: 14;
+    font-size: 20;
     font-family: inherit;
   }
   .download--img {
+    padding: 3rem;
+    border: 1px solid;
+    border-color: rgb(214, 214, 214);
+    box-shadow: 0 5px 10px rgba(176, 182, 204, 0.05),
+      0 15px 40px rgba(172, 175, 187, 0.2);
+    border-radius: 12px;
     height: 70%;
-    width: 100%;
+    width: inherit;
+    margin-bottom: 6rem;
+  }
+  .remarks--section {
+    background: white;
+    margin-left: 0rem;
+    width: auto;
+    border-radius: 12px;
+    padding: 1rem;
+    height: 30rem;
+    box-shadow: 0 5px 10px rgba(114, 120, 141, 0.05),
+      0 15px 40px rgba(123, 128, 151, 0.2);
   }
   .home {
+    height: auto;
+    width: 70%;
+    margin-top: 3rem;
+    box-shadow: 0 5px 10px rgba(114, 120, 141, 0.05),
+      0 15px 40px rgba(123, 128, 151, 0.2);
   }
   .logout2 {
+    margin-bottom: 5rem;
   }
 }

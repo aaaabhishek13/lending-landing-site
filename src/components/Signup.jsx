@@ -89,11 +89,11 @@ export default function Signup() {
                 />
               </Form.Group>
               <Form.Group id="empid">
-                <Form.Label>Employee Id</Form.Label>
+                <Form.Label>Employee ID</Form.Label>
                 <Form.Control
                   type="text"
                   ref={empidRef}
-                  placeholder="Please enter your employee id"
+                  placeholder="Please enter your Employee ID"
                   required
                 />
               </Form.Group>

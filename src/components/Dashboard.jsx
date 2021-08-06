@@ -55,12 +55,10 @@ export default function Dashboard() {
       <div>
         <div className=" dashboard  ">
           <Col xs={12} md={8}>
-            <h1 className="dashboard--title">Hi, Welcome,</h1>
+            <h1 className="dashboard--title">Hi Welcome,</h1>
             <br />
             <h1 className="dashboard--desc">
-              Simplify the hassle of collateral Title Search Report by providing
-              an instant-on the go decision with zero physical intervention in
-              the journey of secured lending from financial institutions.
+              Verify The Title Of Your Property
             </h1>
             <Button
               className="btn btn-custom btn-lg dashboard--btn"
@@ -86,7 +84,7 @@ export default function Dashboard() {
               <Row>
                 <h3 className="card--title">Generate Title Search Report</h3>
                 <h3 className="card--desc">
-                  Get your title search report done in just one step:
+                  Get your title search report in just a click
                 </h3>
               </Row>
               <Row>
@@ -104,12 +102,10 @@ export default function Dashboard() {
           <Card className="status">
             <Card.Body className="status--card--body">
               <Row>
-                <Image src={resultIcon} className="report--icon" />
+                <Image src={resultIcon} className="report--check--icon" />
               </Row>
               <h3 className="card--title">Past Report</h3>
-              <h3 className="card--desc">
-                Check your current and past reports in just one click
-              </h3>
+              <h3 className="card--desc">Check your past reports here</h3>
               <Button
                 className="btn btn-custom btn-lg page-scroll status--btn"
                 onClick={handleReport}

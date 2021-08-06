@@ -20,7 +20,7 @@ export default function App() {
           <Route path="/login" component={Login} />
           <Route path="/signup" component={Signup} />
           {/* <Route path="/dashboard" component={Dashboard} /> */}
-          {/* <Route path="/forms" component={Forms} /> */}
+          <Route path="/forms" component={Forms} />
           {/* <Route path="/reports" component={Reports} /> */}
           {isAuth && <Route path="/dashboard" component={Dashboard} />}
           {isAuth && <Route path="/forms" component={Forms} />}

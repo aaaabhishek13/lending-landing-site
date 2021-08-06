@@ -10,6 +10,7 @@
 }
 h2 {
   font-family: "Poppins", sans-serif;
+  margin-top: 0rem;
   font-weight: bolder;
 }
 
@@ -43,6 +44,9 @@ label {
     margin-left: 30rem;
     width: 50rem;
     height: fit-content;
+  }
+  h2 {
+    margin-top: 3rem;
   }
   .signup--card--body {
     padding: 7rem;

@@ -4,7 +4,7 @@ import { Card, Button, Row, Col, Image } from "react-bootstrap";
 // import { useAuth } from "../contexts/AuthContext";
 import { Link, useHistory } from "react-router-dom";
 import { authActions } from "../store/auth";
-import downloadImg from "../assets/undraw_Download_re_li50.svg";
+import downloadImg from "../assets/undraw_cloud_files_wmo8.svg";
 import "./dashboard.css";
 import "./Reports.css";
 import reportIcon from "../assets/report.png";
@@ -47,29 +47,32 @@ export default function Reports() {
             <Col xs={12} md={8}>
               <Card className="report--section">
                 <Row>
-                  <h1 className="report--title">Reports:</h1>
+                  <h1 className="report--title">Report:</h1>
                 </Row>
                 <Row>
-                  <Image src={downloadImg} className="download--img" />
+                  <Col xs={12} md={8}>
+                    <Image src={downloadImg} className="download--img" />
+                  </Col>
+                  <Col xs={6} md={4}>
+                    <Button
+                      className="btn btn-custom btn-lg report--btn"
+                      onClick={handleForm}
+                    >
+                      Download{" "}
+                      <span>
+                        <i class="fa fa-arrow-down"></i>
+                      </span>
+                    </Button>
+                  </Col>
                 </Row>
-                <Row>
-                  <Button
-                    className="btn btn-custom btn-lg report--btn"
-                    onClick={handleForm}
-                  >
-                    Download{" "}
-                    <span>
-                      <i class="fa fa-arrow-down"></i>
-                    </span>
-                  </Button>
-                </Row>
+                <Row></Row>
               </Card>
             </Col>
             <Col xs={6} md={4}>
               <Card className="remarks--section">
                 <h1 className="report--title">Remarks:</h1>
                 <h3 className="report--desc">
-                  Based on your reports remarks will be shown here
+                  Remarks, if any, will be displayed here.
                 </h3>
               </Card>
             </Col>
@@ -80,11 +83,7 @@ export default function Reports() {
             <Card className="home">
               <Card.Body className="tsr--card--body">
                 <Row>
-                  <Image src={reportIcon} className="report--icon" />
-                </Row>
-                <Row>
-                  <h3 className="card--title">Get back to home</h3>
-                  <h3 className="card--desc">Return to dashboard:</h3>
+                  <h3 className="home--card--title">Get back to dashboard</h3>
                 </Row>
                 <Row>
                   <Button
@@ -101,8 +100,7 @@ export default function Reports() {
           <Col xs={6} md={4}>
             <Card className="logout2">
               <Card.Body className="logout--card--body">
-                <h3 className=" logout--card--title">Logout</h3>
-                <h3 className=" logout--card--desc">Logout from session</h3>
+                <h3 className=" logout--card--title">Logout from session</h3>
                 <Button
                   className="btn btn-custom btn-lg page-scroll logout--btn"
                   onClick={handleLogout}
