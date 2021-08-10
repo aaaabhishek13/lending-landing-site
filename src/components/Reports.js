@@ -81,7 +81,7 @@ export default function Reports() {
           </div>
         </div>
         <div className="report--controls ">
-          <Col xs={12} md={8}>
+          <Col xs={12} md={6}>
             <Card className="home">
               <Card.Body className="tsr--card--body">
                 <Row>
@@ -99,7 +99,7 @@ export default function Reports() {
             </Card>
           </Col>
 
-          <Col xs={6} md={4}>
+          <Col xs={6} md={6}>
             <Card className="logout2">
               <Card.Body className="logout--card--body">
                 <h3 className=" logout--card--title">Logout from session</h3>

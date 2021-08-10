@@ -75,7 +75,7 @@ export default function Dashboard() {
         </Row>
       </div>
       <Row className="dashboard--controls ">
-        <Col xs={12} md={8}>
+        <Col xs={12} md={6}>
           <Card className="tsr">
             <Card.Body className="tsr--card--body">
               <Row>
@@ -98,7 +98,7 @@ export default function Dashboard() {
             </Card.Body>
           </Card>
         </Col>
-        <Col xs={6} md={4}>
+        <Col xs={6} md={6}>
           <Card className="status">
             <Card.Body className="status--card--body">
               <Row>
