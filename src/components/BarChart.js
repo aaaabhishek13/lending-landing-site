@@ -6,7 +6,7 @@ import "./BarChart.css";
 // some of this code is a variation on https://jsfiddle.net/cmyker/u6rr5moq/
 
 const data = {
-  labels: ["Mumbai", "Bengalore", "Chennai"],
+  labels: ["Mumbai", "Bengaluru", "Chennai"],
   datasets: [
     {
       data: [20, 60, 20],

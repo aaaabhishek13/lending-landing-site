@@ -54,15 +54,17 @@ export default function Reports() {
                     <Image src={downloadImg} className="download--img" />
                   </Col>
                   <Col xs={6} md={4}>
-                    <Button
-                      className="btn btn-custom btn-lg report--btn"
-                      onClick={handleForm}
-                    >
-                      Download{" "}
-                      <span>
-                        <i class="fa fa-arrow-down"></i>
-                      </span>
-                    </Button>
+                    <Row>
+                      <Button
+                        className="btn btn-custom btn-lg report--btn"
+                        onClick={handleForm}
+                      >
+                        Download{" "}
+                        <span>
+                          <i class="fa fa-arrow-down"></i>
+                        </span>
+                      </Button>
+                    </Row>
                   </Col>
                 </Row>
                 <Row></Row>
@@ -70,7 +72,7 @@ export default function Reports() {
             </Col>
             <Col xs={6} md={4}>
               <Card className="remarks--section">
-                <h1 className="report--title">Remarks:</h1>
+                <h1 className="remark--title">Remarks:</h1>
                 <h3 className="report--desc">
                   Remarks, if any, will be displayed here.
                 </h3>
@@ -102,7 +104,7 @@ export default function Reports() {
               <Card.Body className="logout--card--body">
                 <h3 className=" logout--card--title">Logout from session</h3>
                 <Button
-                  className="btn btn-custom btn-lg page-scroll logout--btn"
+                  className="btn btn-custom btn-lg  logout--btn"
                   onClick={handleLogout}
                 >
                   Log Out

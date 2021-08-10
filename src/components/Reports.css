@@ -6,6 +6,9 @@
   width: inherit;
   border-radius: 20px;
   background: #f2f5f8;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .report--title {
   font-size: x-large;
@@ -25,7 +28,7 @@
   width: 80%;
 }
 .home {
-  background: #f2f5f8;
+  background: #082032;
   margin-top: 3rem;
 
   border-radius: 20px;
@@ -59,21 +62,27 @@
     0 15px 40px rgba(123, 128, 151, 0.2);
 }
 
-.home {
-  background: #082032;
-}
 .home--card--title {
   color: white;
-  font-size: large;
-  font-weight: bolder;
 }
 .report--title {
+  font-size: xx-large;
+  margin-left: 2rem;
+}
+.remark--title {
   font-size: xx-large;
   margin-left: 2rem;
 }
 .report--desc {
   font-family: "poppins";
   margin-left: 2rem;
+}
+.report--desc--download {
+  font-family: "poppins";
+  margin-left: 2rem;
+}
+.logout--card--title {
+  color: white;
 }
 
 @media only screen and (min-width: 768px) {
@@ -103,9 +112,9 @@
   }
   .report--section {
     margin-left: 0rem;
-    padding: 0rem;
+    padding: 1rem;
     background: white;
-    width: auto;
+    width: 95%;
     border-radius: 20px;
     box-shadow: 0 5px 10px rgba(114, 120, 141, 0.05),
       0 15px 40px rgba(123, 128, 151, 0.2);
@@ -113,11 +122,23 @@
   }
   .report--title {
     font-size: xx-large;
+    margin-left: 8rem;
+  }
+  .remark--title {
+    font-size: xx-large;
     margin-left: 5rem;
   }
   .report--desc {
     font-family: "poppins";
     margin-left: 5rem;
+  }
+  .report--desc--download {
+    padding: 1rem;
+    margin-top: 4rem;
+    text-align: center;
+    font-family: "poppins";
+    margin-right: 3rem;
+    margin-left: 0rem;
   }
   .report--btn {
     margin-left: -3rem;
@@ -132,6 +153,7 @@
     font-family: inherit;
   }
   .download--img {
+    margin-left: 6rem;
     padding: 3rem;
     border: 1px solid;
     border-color: rgb(214, 214, 214);
@@ -156,10 +178,17 @@
     height: auto;
     width: 70%;
     margin-top: 3rem;
-    box-shadow: 0 5px 10px rgba(114, 120, 141, 0.05),
-      0 15px 40px rgba(123, 128, 151, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   }
   .logout2 {
     margin-bottom: 5rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  .logout--card--title {
+    color: white;
   }
 }
