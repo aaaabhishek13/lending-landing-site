@@ -112,6 +112,17 @@
   background: white;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
+
+/* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .dashboard {
+    width: inherit;
+    margin-top: 5rem;
+    height: 200rem;
+    padding: 6rem;
+    border-radius: 20px;
+  }
+} */
+
 @media only screen and (min-width: 768px) {
   .page {
     margin-left: 5rem;
@@ -120,7 +131,7 @@
   .dashboard {
     width: inherit;
     margin-top: 5rem;
-    height: 60rem;
+    height: fit-content;
     padding: 6rem;
     border-radius: 20px;
   }
@@ -154,10 +165,11 @@
     padding: rem;
   }
   .tsr {
+    margin-left: -1.4rem;
     padding: 2rem;
     margin-bottom: 5rem;
-    margin-left: -1.4rem;
-    width: 80%;
+
+    width: 100%;
   }
   .status {
     padding: 2rem;

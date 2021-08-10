@@ -19,7 +19,10 @@ h2 {
   background: blue;
   border-radius: 12px;
   margin-top: 10px;
-  margin-left: 9rem;
+  justify-content: center;
+  align-items: center;
+  margin-left: 28%;
+  display: inherit;
   position: relative;
 }
 .fade {
@@ -42,8 +45,7 @@ label {
 @media only screen and (min-width: 780px) {
   .cardd2 {
     margin-top: 30px;
-    margin-left: 30rem;
-    width: 50rem;
+    width: 100%;
     height: fit-content;
   }
   h2 {

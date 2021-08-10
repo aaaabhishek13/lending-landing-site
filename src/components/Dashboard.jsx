@@ -53,8 +53,8 @@ export default function Dashboard() {
   return (
     <div className="page">
       <div>
-        <div className=" dashboard  ">
-          <Col xs={12} md={8}>
+        <Row className=" dashboard  ">
+          <Col xs={12} sm={12} md={8}>
             <h1 className="dashboard--title">Hi Welcome,</h1>
             <br />
             <h1 className="dashboard--desc">
@@ -67,14 +67,14 @@ export default function Dashboard() {
               Get Started
             </Button>
           </Col>
-          <Col xs={6} md={4}>
+          <Col xs={12} sm={12} md={4}>
             <Card className="chart">
               <BarChart />
             </Card>
           </Col>
-        </div>
+        </Row>
       </div>
-      <div className="dashboard--controls ">
+      <Row className="dashboard--controls ">
         <Col xs={12} md={8}>
           <Card className="tsr">
             <Card.Body className="tsr--card--body">
@@ -115,7 +115,7 @@ export default function Dashboard() {
             </Card.Body>
           </Card>
         </Col>
-      </div>
+      </Row>
     </div>
   );
 }

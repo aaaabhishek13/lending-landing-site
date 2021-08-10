@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 import { authActions } from "../store/auth";
-import { Form, Button, Card, Alert } from "react-bootstrap";
+import { Form, Button, Card, Alert, Row, Col } from "react-bootstrap";
 
 import { Link, useHistory } from "react-router-dom";
 import "./Signup.css";
@@ -52,24 +52,31 @@ export default function Signup() {
             <h2 className="text-center mb-4">Sign Up</h2>
             {error && <Alert variant="danger">{error}</Alert>}
             <Form noValidate onSubmit={handleSubmit}>
-              <Form.Group id="userame">
-                <Form.Label>Full Name</Form.Label>
-                <Form.Control
-                  type="text"
-                  ref={userNameRef}
-                  placeholder="Please enter your full name"
-                  required
-                />
-              </Form.Group>
-              <Form.Group id="email">
-                <Form.Label>Email</Form.Label>
-                <Form.Control
-                  type="email"
-                  ref={emailRef}
-                  placeholder="Please enter your email address"
-                  required
-                />
-              </Form.Group>
+              <Row>
+                <Col md={6}>
+                  <Form.Group id="userame">
+                    <Form.Label>Full Name</Form.Label>
+                    <Form.Control
+                      type="text"
+                      ref={userNameRef}
+                      placeholder="Please enter your full name"
+                      required
+                    />
+                  </Form.Group>
+                </Col>
+                <Col md={6}>
+                  <Form.Group id="email">
+                    <Form.Label>Email</Form.Label>
+                    <Form.Control
+                      type="email"
+                      ref={emailRef}
+                      placeholder="Please enter your email address"
+                      required
+                    />
+                  </Form.Group>
+                </Col>
+              </Row>
+
               <Form.Group id="organization">
                 <Form.Label>Organization</Form.Label>
                 <Form.Control
@@ -97,25 +104,31 @@ export default function Signup() {
                   required
                 />
               </Form.Group>
-              <Form.Group id="password">
-                <Form.Label>Password</Form.Label>
-                <Form.Control
-                  isInvalid={error}
-                  type="password"
-                  placeholder="Please enter your password"
-                  ref={passwordRef}
-                  required
-                />
-              </Form.Group>
-              <Form.Group id="password-confirm">
-                <Form.Label>Password Confirmation</Form.Label>
-                <Form.Control
-                  type="password"
-                  ref={passwordConfirmRef}
-                  placeholder="Please confirm the given password"
-                  required
-                />
-              </Form.Group>
+              <Row>
+                <Col md={6}>
+                  <Form.Group id="password">
+                    <Form.Label>Password</Form.Label>
+                    <Form.Control
+                      isInvalid={error}
+                      type="password"
+                      placeholder="Please enter your password"
+                      ref={passwordRef}
+                      required
+                    />
+                  </Form.Group>
+                </Col>
+                <Col md={6}>
+                  <Form.Group id="password-confirm">
+                    <Form.Label>Password Confirmation</Form.Label>
+                    <Form.Control
+                      type="password"
+                      ref={passwordConfirmRef}
+                      placeholder="Please confirm the given password"
+                      required
+                    />
+                  </Form.Group>
+                </Col>
+              </Row>
               <Button
                 disabled={loading}
                 className="btn btn-custom btn-lg page-scroll signup--btn"
