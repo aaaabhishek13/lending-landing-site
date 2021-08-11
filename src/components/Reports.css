@@ -1,3 +1,5 @@
+.background {
+}
 .report {
   margin-top: 0rem;
   padding-top: 3rem;
@@ -20,7 +22,7 @@
   margin-top: 30px;
   margin-left: 26%;
   border-radius: 60px;
-  font-size: 10px;
+  font-size: 13px;
 }
 .download--img {
   margin-left: 3rem;
@@ -34,11 +36,15 @@
   border-radius: 20px;
 }
 .logout2 {
+  display: inline-block;
+  width: 100%;
+
+  margin-bottom: 3rem;
   background: #091c45;
   color: white;
   margin-top: 3rem;
-
   border-radius: 20px;
+  margin-bottom: 5rem;
 }
 .report--section {
   margin-left: -5rem;
@@ -83,6 +89,8 @@
 }
 .logout--card--title {
   color: white;
+}
+.report--controls {
 }
 
 @media only screen and (min-width: 768px) {

@@ -19,8 +19,8 @@ export default function App() {
           <Route exact path="/" component={Home} />
           <Route path="/login" component={Login} />
           <Route path="/signup" component={Signup} />
-          {/* <Route path="/dashboard" component={Dashboard} /> */}
-          {/* <Route path="/reports" component={Reports} /> */}
+          {/* <Route path="/dashboard" component={Dashboard} />
+          <Route path="/reports" component={Reports} /> */}
           {isAuth && <Route path="/dashboard" component={Dashboard} />}
           {isAuth && <Route path="/forms" component={Forms} />}
           {isAuth && <Route path="/reports" component={Reports} />}

@@ -33,8 +33,8 @@ export default function Login() {
 
   return (
     <div className="">
-      <div className="container d-flex lgn">
-        <div className="">
+      <div className="container d-flex ">
+        <div className="lgn">
           <Card className="cardd ">
             <Card.Body className="login--card--body">
               <Image src={loginimg} fluid className="login--img" />
