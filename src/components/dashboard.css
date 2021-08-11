@@ -1,16 +1,22 @@
 .page {
 }
 .dashboard {
-  margin-top: 2rem;
+  margin-left: 0.7rem;
+  width: 96%;
+
   padding-top: 3rem;
   padding: 1rem;
   padding-bottom: 2rem;
-  margin-left: 0rem;
-  height: fit-content;
-  width: 100%;
-  border-radius: 20px;
 
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  height: fit-content;
+
+  border-radius: 20px;
+  border: 1px solid rgb(204, 204, 204);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.dashboard--controls {
+  width: inherit;
+  height: fit-content;
 }
 
 .dashboard--title {
@@ -23,8 +29,11 @@
   font-family: "poppins";
 }
 .tsr {
+  margin-left: 2rem;
+  width: 90%;
   margin-top: 6rem;
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
   border-radius: 20px;
 }
 .logout {
@@ -35,10 +44,12 @@
   border-radius: 20px;
 }
 .status {
+  margin-left: 2rem;
+  width: 90%;
   margin-top: 6rem;
   margin-bottom: 5rem;
   border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .tsr--btn {
@@ -111,7 +122,7 @@
   padding: 2rem;
   border-radius: 30px;
   background: white;
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 /* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
@@ -131,11 +142,13 @@
     height: 100rem;
   }
   .dashboard {
+    margin-left: 0rem;
     width: inherit;
     margin-top: 5rem;
     height: fit-content;
     padding: 6rem;
     border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   }
   .dashboard--controls {
     width: inherit;
@@ -167,14 +180,20 @@
     padding: rem;
   }
   .tsr {
-    margin-left: -1.4rem;
+    margin-left: 0rem;
+
+    width: auto;
     padding: 2rem;
     margin-bottom: 5rem;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   }
   .status {
+    margin-left: 0rem;
+    width: auto;
     padding: 2rem;
     margin-bottom: 5rem;
     margin-right: -1.4rem;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   }
   .logout {
     background: #060a19;
@@ -216,5 +235,8 @@
   .logout--card--desc {
     color: white;
     font-size: medium;
+  }
+  .chart {
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   }
 }
