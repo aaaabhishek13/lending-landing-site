@@ -1,8 +1,8 @@
 .page {
 }
 .dashboard {
-  margin-left: 0.7rem;
-  width: 96%;
+  margin-left: 1.5rem;
+  width: 92%;
 
   padding-top: 3rem;
   padding: 1rem;
@@ -124,16 +124,6 @@
   background: white;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-
-/* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  .dashboard {
-    width: inherit;
-    margin-top: 5rem;
-    height: 200rem;
-    padding: 6rem;
-    border-radius: 20px;
-  }
-} */
 
 @media only screen and (min-width: 768px) {
   .page {

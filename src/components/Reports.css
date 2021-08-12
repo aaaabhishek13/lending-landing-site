@@ -3,9 +3,10 @@
 .report {
   margin-top: 0rem;
   padding-top: 3rem;
+  margin-left: 1.5rem;
   padding: 7rem;
   height: fit-content;
-  width: inherit;
+  width: 92%;
   border-radius: 20px;
   background: #f2f5f8;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
@@ -47,7 +48,7 @@
   margin-bottom: 5rem;
 }
 .report--section {
-  margin-left: -5rem;
+  margin-left: -6.2rem;
   padding: 1rem;
   background: white;
   width: 30rem;
@@ -59,7 +60,7 @@
 .remarks--section {
   background: white;
   border-radius: 12px;
-  margin-left: -5rem;
+  margin-left: -6.2rem;
   height: 30rem;
   width: 30rem;
   padding: 3rem;
@@ -93,7 +94,70 @@
 .report--controls {
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (device-width: 768px) {
+  .report {
+    width: 96%;
+    margin-top: 5rem;
+
+    padding: 6rem;
+    border-radius: 20px;
+  }
+  .report--section {
+    margin-left: 1rem;
+    padding: 1rem;
+    background: white;
+    width: auto;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(114, 120, 141, 0.05),
+      0 15px 40px rgba(123, 128, 151, 0.2);
+    margin-bottom: 0rem;
+  }
+  .remarks--section {
+    margin-top: 2rem;
+    background: white;
+    margin-left: 1rem;
+    width: 98%;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 5px 10px rgba(114, 120, 141, 0.05),
+      0 15px 40px rgba(123, 128, 151, 0.2);
+  }
+  .report--title {
+    font-size: xx-large;
+    margin-left: 8rem;
+  }
+  .remark--title {
+    font-size: xx-large;
+    margin-left: 6rem;
+  }
+  .download--img {
+    margin-left: 6rem;
+    padding: 3rem;
+    border: 1px solid;
+    border-color: rgb(214, 214, 214);
+    box-shadow: 0 5px 10px rgba(176, 182, 204, 0.05),
+      0 15px 40px rgba(172, 175, 187, 0.2);
+    border-radius: 12px;
+    height: 70%;
+
+    margin-bottom: 6rem;
+  }
+  .report--desc {
+    font-family: "poppins";
+    margin-left: 8rem;
+  }
+  .report--btn {
+    background: #c400ff;
+    padding: 2rem;
+
+    margin-bottom: 30px;
+    margin-left: 37%;
+    border-radius: 60px;
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
   .background {
     margin-top: 3rem;
   }
@@ -135,10 +199,12 @@
   .remark--title {
     font-size: xx-large;
     margin-left: 5rem;
+    padding-right: 5rem;
   }
   .report--desc {
     font-family: "poppins";
     margin-left: 5rem;
+    padding-right: 5rem;
   }
   .report--desc--download {
     padding: 1rem;
