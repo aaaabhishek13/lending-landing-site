@@ -47,6 +47,7 @@
 }
 .report--section {
   margin-left: -4.5rem;
+  margin-right: -4.5rem;
   padding: 1rem;
   background: white;
   width: 30rem;
@@ -59,6 +60,7 @@
   background: white;
   border-radius: 12px;
   margin-left: -4.5rem;
+  margin-right: -4.5rem;
   height: 30rem;
   width: 30rem;
   padding: 3rem;
