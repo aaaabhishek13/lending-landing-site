@@ -1,5 +1,3 @@
-.background {
-}
 .report {
   margin-top: 0rem;
   padding-top: 3rem;
@@ -48,7 +46,7 @@
   margin-bottom: 5rem;
 }
 .report--section {
-  margin-left: -5.9rem;
+  margin-left: -4.5rem;
   padding: 1rem;
   background: white;
   width: 30rem;
@@ -60,7 +58,7 @@
 .remarks--section {
   background: white;
   border-radius: 12px;
-  margin-left: -5.9rem;
+  margin-left: -4.5rem;
   height: 30rem;
   width: 30rem;
   padding: 3rem;
@@ -93,82 +91,36 @@
 }
 .report--controls {
 }
-
-@media only screen and (device-width: 768px) {
-  .report {
-    width: 96%;
-    margin-top: 5rem;
-
-    padding: 6rem;
-    border-radius: 20px;
-  }
-  .report--section {
-    margin-left: 1rem;
-    padding: 1rem;
-    background: white;
-    width: auto;
-    border-radius: 20px;
-    box-shadow: 0 5px 10px rgba(114, 120, 141, 0.05),
-      0 15px 40px rgba(123, 128, 151, 0.2);
-    margin-bottom: 0rem;
-  }
-  .remarks--section {
-    margin-top: 2rem;
-    background: white;
-    margin-left: 1rem;
-    width: 98%;
-    border-radius: 12px;
-    padding: 1rem;
-    box-shadow: 0 5px 10px rgba(114, 120, 141, 0.05),
-      0 15px 40px rgba(123, 128, 151, 0.2);
-  }
-  .report--title {
-    font-size: xx-large;
-    margin-left: 8rem;
-  }
-  .remark--title {
-    font-size: xx-large;
-    margin-left: 6rem;
-  }
+@media only screen and (min-device-width: 768px) and (max-device-width: 830px) and (orientation: landscape) {
   .download--img {
-    margin-left: 6rem;
+    margin-left: 0rem;
     padding: 3rem;
     border: 1px solid;
     border-color: rgb(214, 214, 214);
     box-shadow: 0 5px 10px rgba(176, 182, 204, 0.05),
       0 15px 40px rgba(172, 175, 187, 0.2);
     border-radius: 12px;
-    height: 70%;
-
+    height: 0;
+    width: auto;
     margin-bottom: 6rem;
-  }
-  .report--desc {
-    font-family: "poppins";
-    margin-left: 8rem;
-  }
-  .report--btn {
-    background: #c400ff;
-    padding: 2rem;
-
-    margin-bottom: 30px;
-    margin-left: 37%;
-    border-radius: 60px;
-    font-size: 13px;
   }
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-device-width: 768px) and (orientation: landscape) {
   .background {
     margin-top: 3rem;
+    height: 100rem;
   }
   .report {
     align-items: center;
     justify-content: center;
     margin-left: 10rem;
     margin-right: 10rem;
+
+    height: fit-content;
     width: inherit;
     margin-top: 0rem;
-    height: 78rem;
+
     padding: 6rem;
     border-radius: 20px;
     background: #f2f5f8;
@@ -183,10 +135,11 @@
     height: fit-content;
   }
   .report--section {
+    margin-top: 1rem;
     margin-left: 0rem;
     padding: 1rem;
     background: white;
-    width: 95%;
+    width: 100%;
     border-radius: 20px;
     box-shadow: 0 5px 10px rgba(114, 120, 141, 0.05),
       0 15px 40px rgba(123, 128, 151, 0.2);
@@ -215,8 +168,9 @@
     margin-left: 0rem;
   }
   .report--btn {
-    margin-left: -3rem;
-
+    float: left;
+    justify-content: center;
+    align-items: center;
     background: #c400ff;
     padding: 2rem;
     width: fit-content;
@@ -226,6 +180,8 @@
     font-size: 20;
     font-family: inherit;
   }
+  .report-btn--area {
+  }
   .download--img {
     margin-left: 6rem;
     padding: 3rem;
@@ -234,14 +190,15 @@
     box-shadow: 0 5px 10px rgba(176, 182, 204, 0.05),
       0 15px 40px rgba(172, 175, 187, 0.2);
     border-radius: 12px;
-    height: 70%;
-    width: inherit;
+    height: 30%;
+    width: 70%;
     margin-bottom: 6rem;
   }
   .remarks--section {
+    margin-top: 1rem;
     background: white;
     margin-left: 0rem;
-    width: auto;
+    width: 100%;
     border-radius: 12px;
     padding: 1rem;
     height: 30rem;

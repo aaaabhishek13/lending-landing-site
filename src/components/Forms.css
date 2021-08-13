@@ -39,16 +39,16 @@ label {
   width: 100%;
   height: 40%;
 }
-@media only screen and (min-width: 720px) {
+@media only screen and (min-device-width: 768px) {
   .cardd3 {
     margin-top: 30px;
-    margin-left: 30rem;
+    margin-left: 26%;
     height: fit-content;
-    width: 60rem;
+    width: 50%;
     padding: 0rem;
   }
   .form--card--body {
-    padding: 10rem;
+    padding: 6rem;
     padding-top: 6rem;
     height: 100%;
     margin-bottom: 10px;
@@ -75,7 +75,7 @@ label {
     margin-top: 20px;
 
     margin-right: 4rem;
-    width: 40rem;
-    height: 30rem;
+    width: 100%;
+    height: auto;
   }
 }

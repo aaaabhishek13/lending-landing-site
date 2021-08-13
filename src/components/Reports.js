@@ -40,80 +40,79 @@ export default function Reports() {
   }
 
   return (
-    <>
-      <div className="background">
-        <div>
-          <div className=" report">
-            <Col xs={12} md={8}>
-              <Card className="report--section">
-                <Row>
-                  <h1 className="report--title">Report:</h1>
-                </Row>
-                <Row>
-                  <Col xs={12} md={8}>
-                    <Image src={downloadImg} className="download--img" />
-                  </Col>
-                  <Col xs={6} md={4}>
-                    <Row>
-                      <Button
-                        className="btn btn-custom btn-lg report--btn"
-                        onClick={handleForm}
-                      >
-                        Download{" "}
-                        <span>
-                          <i class="fa fa-arrow-down"></i>
-                        </span>
-                      </Button>
-                    </Row>
-                  </Col>
-                </Row>
-                <Row></Row>
-              </Card>
-            </Col>
-            <Col xs={6} md={4}>
-              <Card className="remarks--section">
-                <h1 className="remark--title">Remarks:</h1>
-                <h3 className="report--desc">
-                  Remarks, if any, will be displayed here.
-                </h3>
-              </Card>
-            </Col>
-          </div>
-        </div>
-        <div className="report--controls ">
-          <Col xs={12} md={6}>
-            <Card className="home">
-              <Card.Body className="tsr--card--body">
-                <Row>
-                  <h3 className="home--card--title">Get back to dashboard</h3>
-                </Row>
-                <Row>
+    <div className="background">
+      <Row className=" report ">
+        <Col xs={12} sm={12} md={8}>
+          <Card className="report--section ">
+            <Row>
+              <h1 className="report--title">Report:</h1>
+            </Row>
+            <Row>
+              <Col xs={12} md={8}>
+                <Image
+                  src={downloadImg}
+                  className="download--img img-responsive"
+                />
+              </Col>
+              <Col xs={12} md={4}>
+                <Row className="report-btn--area">
                   <Button
-                    className="btn btn-custom btn-lg page-scroll tsr--btn"
+                    className="btn btn-custom btn-lg report--btn"
                     onClick={handleForm}
                   >
-                    Dashboard
+                    Download{" "}
+                    <span>
+                      <i class="fa fa-arrow-down"></i>
+                    </span>
                   </Button>
                 </Row>
-              </Card.Body>
-            </Card>
-          </Col>
+              </Col>
+            </Row>
+          </Card>
+        </Col>
+        <Col xs={12} sm={12} md={4}>
+          <Card className="remarks--section">
+            <h1 className="remark--title">Remarks:</h1>
+            <h3 className="report--desc">
+              Remarks, if any, will be displayed here.
+            </h3>
+          </Card>
+        </Col>
+      </Row>
 
-          <Col xs={6} md={6}>
-            <Card className="logout2">
-              <Card.Body className="logout--card--body">
-                <h3 className=" logout--card--title">Logout from session</h3>
+      <div className="report--controls ">
+        <Col xs={12} md={6}>
+          <Card className="home">
+            <Card.Body className="tsr--card--body">
+              <Row>
+                <h3 className="home--card--title">Get back to dashboard</h3>
+              </Row>
+              <Row>
                 <Button
-                  className="btn btn-custom btn-lg  logout--btn"
-                  onClick={handleLogout}
+                  className="btn btn-custom btn-lg page-scroll tsr--btn"
+                  onClick={handleForm}
                 >
-                  Log Out
+                  Dashboard
                 </Button>
-              </Card.Body>
-            </Card>
-          </Col>
-        </div>
+              </Row>
+            </Card.Body>
+          </Card>
+        </Col>
+
+        <Col xs={6} md={6}>
+          <Card className="logout2">
+            <Card.Body className="logout--card--body">
+              <h3 className=" logout--card--title">Logout from session</h3>
+              <Button
+                className="btn btn-custom btn-lg  logout--btn"
+                onClick={handleLogout}
+              >
+                Log Out
+              </Button>
+            </Card.Body>
+          </Card>
+        </Col>
       </div>
-    </>
+    </div>
   );
 }
