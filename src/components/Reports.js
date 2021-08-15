@@ -42,7 +42,7 @@ export default function Reports() {
   return (
     <div className="background">
       <Row className=" report ">
-        <Col xs={12} sm={12} md={8}>
+        <Col xs={12} sm={6} md={8}>
           <Card className="report--section ">
             <Row>
               <h1 className="report--title">Report:</h1>
@@ -70,7 +70,7 @@ export default function Reports() {
             </Row>
           </Card>
         </Col>
-        <Col xs={12} sm={12} md={4}>
+        <Col xs={12} sm={6} md={4}>
           <Card className="remarks--section">
             <h1 className="remark--title">Remarks:</h1>
             <h3 className="report--desc">
