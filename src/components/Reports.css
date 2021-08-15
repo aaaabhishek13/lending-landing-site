@@ -94,25 +94,40 @@
 }
 .report--controls {
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 830px) and (orientation: landscape) {
-  .download--img {
-    margin-left: 0rem;
-    padding: 3rem;
-    border: 1px solid;
-    border-color: rgb(214, 214, 214);
-    box-shadow: 0 5px 10px rgba(176, 182, 204, 0.05),
-      0 15px 40px rgba(172, 175, 187, 0.2);
-    border-radius: 12px;
-    height: 0;
-    width: auto;
-    margin-bottom: 6rem;
+@media only screen and (max-device-width: 900px) and (orientation: landscape) {
+  .report {
+    width: 95%;
+  }
+  .report--btn {
+    background: #c400ff;
+    padding: 1.5rem;
+    margin-top: 30px;
+    margin-left: 26%;
+    border-radius: 60px;
+    font-size: 18px;
+    font-family: inherit;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-device-width: 900px) and (orientation: portrait) {
+  .report {
+    width: 95%;
+  }
+  .report--btn {
+    background: #c400ff;
+    padding: 1.5rem;
+    margin-top: 30px;
+    margin-left: 26%;
+    border-radius: 60px;
+    font-size: 18px;
+    font-family: inherit;
+    margin-bottom: 10px;
   }
 }
 
-@media only screen and (min-device-width: 768px) and (orientation: landscape) {
+@media only screen and (min-device-width: 1000px) {
   .background {
     margin-top: 3rem;
-    height: 100rem;
   }
   .report {
     align-items: center;
@@ -172,15 +187,14 @@
   }
   .report--btn {
     float: left;
-    justify-content: center;
-    align-items: center;
+    margin-left: -3%;
     background: #c400ff;
-    padding: 2rem;
+    padding: 1rem;
     width: fit-content;
-    margin-top: 20rem;
+    margin-top: 50%;
     margin-bottom: 20px;
     border-radius: 12px;
-    font-size: 20;
+    font-size: 1.2vw;
     font-family: inherit;
   }
   .report-btn--area {
