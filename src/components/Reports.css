@@ -98,11 +98,14 @@
   .report {
     width: 95%;
   }
+  .report--section {
+    padding: 3rem;
+  }
   .report--btn {
     background: #c400ff;
     padding: 1.5rem;
     margin-top: 30px;
-    margin-left: 26%;
+    margin-left: 20%;
     border-radius: 60px;
     font-size: 18px;
     font-family: inherit;
@@ -117,11 +120,14 @@
     background: #c400ff;
     padding: 1.5rem;
     margin-top: 30px;
-    margin-left: 26%;
+    margin-left: 20%;
     border-radius: 60px;
     font-size: 18px;
     font-family: inherit;
     margin-bottom: 10px;
+  }
+  .report--section {
+    padding: 3rem;
   }
 }
 

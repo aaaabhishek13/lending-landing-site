@@ -16,7 +16,7 @@
   background: blue;
   border-radius: 12px;
   margin-top: 10px;
-  margin-left: 10rem;
+  margin-left: 31%;
 }
 label {
   font-family: "Poppins", sans-serif;
@@ -37,7 +37,7 @@ label {
   height: 50%;
 }
 
-@media only screen and (device-width: 768px) {
+@media only screen and (device-width: 728px) {
   /* For general iPad layouts */
   .lgn {
     height: 50%;
@@ -50,7 +50,7 @@ label {
   }
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-device-width: 729px) {
   .cardd {
     margin-top: 30px;
     margin-left: 26%;
