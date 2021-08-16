@@ -33,7 +33,7 @@ export default function Navigation() {
           </button>
           <a
             className="navbar-brand page-scroll"
-            href="#page-top"
+            href="/#page-top"
             style={{ padding: 0 }}
           >
             <img
