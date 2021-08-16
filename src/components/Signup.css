@@ -115,7 +115,7 @@ label {
 
 /* iPhone Xr */
 
-@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
   .cardd2 {
     margin-top: 30px;
     width: 100%;
