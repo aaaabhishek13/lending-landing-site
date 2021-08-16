@@ -129,14 +129,16 @@ export default function Signup() {
                   </Form.Group>
                 </Col>
               </Row>
-              <Button
-                disabled={loading}
-                className="btn btn-custom btn-lg page-scroll signup--btn"
-                type="submit"
-              >
-                Sign Up
-                <Link to="/dashboard" />
-              </Button>
+              <div className="centerbtn">
+                <Button
+                  disabled={loading}
+                  className="btn btn-custom btn-lg page-scroll signup--btn"
+                  type="submit"
+                >
+                  Sign Up
+                  <Link to="/dashboard" />
+                </Button>
+              </div>
             </Form>
             <div className="w-100 text-center mt-2 link--url">
               Already have an account? <Link to="/login">Log In</Link>

@@ -49,13 +49,15 @@ export default function Reports() {
             </Row>
             <Row>
               <Col xs={12} md={8}>
-                <Image
-                  src={downloadImg}
-                  className="download--img img-responsive"
-                />
+                <div className="centerImg">
+                  <Image
+                    src={downloadImg}
+                    className="download--img img-responsive"
+                  />
+                </div>
               </Col>
               <Col xs={12} md={4}>
-                <Row className="report-btn--area">
+                <Row className="centerbtn">
                   <Button
                     className="btn btn-custom btn-lg report--btn"
                     onClick={handleForm}

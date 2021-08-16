@@ -93,12 +93,14 @@ export default function Forms() {
                   required
                 />
               </Form.Group>
-              <Button
-                className="btn btn-custom btn-lg page-scroll forms--btn"
-                type="submit"
-              >
-                Submit
-              </Button>
+              <div className="centerbtn">
+                <Button
+                  className="btn btn-custom btn-lg page-scroll forms--btn"
+                  type="submit"
+                >
+                  Submit
+                </Button>
+              </div>
             </Form>
           </Card.Body>
         </Card>

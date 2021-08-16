@@ -59,14 +59,16 @@ export default function Login() {
                     required
                   />
                 </Form.Group>
-                <Button
-                  disabled={loading}
-                  className="btn btn-custom login--btn"
-                  type="submit"
-                >
-                  Log In
-                  <Link to="/dashboard" />
-                </Button>
+                <div className="centerbtn">
+                  <Button
+                    disabled={loading}
+                    className="btn btn-custom login--btn"
+                    type="submit"
+                  >
+                    Log In
+                    <Link to="/dashboard" />
+                  </Button>
+                </div>
               </Form>
               <div className="w-100 text-center mt-3 link--url">
                 <Link to="/forgot-password">Forgot Password?</Link>

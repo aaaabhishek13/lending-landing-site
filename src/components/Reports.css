@@ -2,15 +2,20 @@
   margin-top: 0rem;
   padding-top: 3rem;
   margin-left: 1.5rem;
+  margin-right: 1.5rem;
   padding-top: 7rem;
   padding-bottom: 7rem;
-  height: fit-content;
-  width: 92%;
+
   border-radius: 20px;
   background: #f2f5f8;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.centerImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .report--title {
   font-size: x-large;
@@ -20,16 +25,19 @@
   background: #c400ff;
   padding: 1.5rem;
   margin-top: 30px;
-  margin-left: 26%;
   border-radius: 60px;
-  font-size: 18px;
+  font-size: 16px;
   font-family: inherit;
   margin-bottom: 10px;
 }
 .download--img {
-  margin-left: 3rem;
-  height: 20%;
+  padding: 1rem;
+  height: 30%;
   width: 80%;
+  border-color: rgb(214, 214, 214);
+  box-shadow: 0 5px 10px rgba(176, 182, 204, 0.05),
+    0 15px 40px rgba(172, 175, 187, 0.2);
+  border-radius: 12px;
 }
 .home {
   background: #082032;
@@ -50,9 +58,10 @@
 }
 .report--section {
   margin-left: 5%;
+  margin-right: 5%;
   padding: 1rem;
   background: white;
-  width: 30rem;
+
   border-radius: 20px;
   box-shadow: 0 5px 10px rgba(114, 120, 141, 0.05),
     0 15px 40px rgba(123, 128, 151, 0.2);
@@ -62,8 +71,10 @@
   background: white;
   border-radius: 12px;
   margin-left: 5%;
+  margin-right: 5%;
+
   height: 30rem;
-  width: 30rem;
+
   padding: 3rem;
 
   box-shadow: 0 5px 10px rgba(114, 120, 141, 0.05),
@@ -75,11 +86,10 @@
 }
 .report--title {
   font-size: xx-large;
-  margin-left: 2rem;
+  margin-left: 4rem;
 }
 .remark--title {
   font-size: xx-large;
-  margin-left: 2rem;
 }
 .report--desc {
   font-family: "poppins";
@@ -105,22 +115,31 @@
     background: #c400ff;
     padding: 1.5rem;
     margin-top: 30px;
-    margin-left: 20%;
     border-radius: 60px;
     font-size: 18px;
     font-family: inherit;
     margin-bottom: 10px;
   }
+  .centerImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .download--img {
+    width: auto;
+  }
+  .report--title {
+    margin-left: 2rem;
+  }
 }
 @media only screen and (min-device-width: 640px) and (max-device-width: 900px) and (orientation: portrait) {
   .report {
-    width: 95%;
   }
   .report--btn {
     background: #c400ff;
     padding: 1.5rem;
     margin-top: 30px;
-    margin-left: 20%;
+
     border-radius: 60px;
     font-size: 18px;
     font-family: inherit;
@@ -128,6 +147,11 @@
   }
   .report--section {
     padding: 3rem;
+  }
+  .centerImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -142,7 +166,7 @@
     margin-right: 10rem;
 
     height: fit-content;
-    width: inherit;
+
     margin-top: 0rem;
 
     padding: 6rem;
@@ -152,10 +176,6 @@
   .report--controls {
     margin-left: 9rem;
     margin-right: 9rem;
-    align-items: center;
-    justify-content: center;
-
-    width: inherit;
     height: fit-content;
   }
   .report--section {
@@ -244,5 +264,10 @@
   }
   .logout--card--title {
     color: white;
+  }
+  .centerImg {
+    display: block;
+    justify-content: center;
+    align-items: center;
   }
 }

@@ -21,8 +21,6 @@ h2 {
   margin-top: 10px;
   justify-content: center;
   align-items: center;
-  margin-left: 28%;
-  display: inherit;
   position: relative;
 }
 .fade {
@@ -42,7 +40,43 @@ label {
 .signup--card--body {
   padding: 20px 10px 10px 10px;
 }
-@media only screen and (min-width: 780px) {
+@media only screen and (min-device-width: 560px) and (orientation: landscape) {
+  .cardd2 {
+    margin-top: 30px;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 3rem;
+  }
+  h2 {
+    margin-top: 3rem;
+  }
+  .signup--card--body {
+    padding: 7rem;
+    padding-top: 4rem;
+    height: 100%;
+  }
+  .signup--btn {
+    margin-left: inherit;
+    margin-top: 2rem;
+    height: 4rem;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .form-control {
+    font-size: large;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  label {
+    margin-top: 10px;
+    font-size: x-large;
+    font-weight: bold;
+  }
+  .link--url {
+    font-size: large;
+  }
+}
+@media only screen and (min-width: 640px) and (orientation: portrait) {
   .cardd2 {
     margin-top: 30px;
     width: 100%;
