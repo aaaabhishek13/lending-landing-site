@@ -5,13 +5,46 @@ import "./Forms.css";
 
 import { Link, useHistory } from "react-router-dom";
 import undraw from "../assets/undraw_House_searching_re_stk8.svg";
+const axios = require("axios");
 
 export default function Forms() {
   const history = useHistory();
+  let url = "http://localhost:8080/forms";
+  //refs
+  const stateRef = useRef();
+  const districtRef = useRef();
+  const villageRef = useRef();
+  const khataRef = useRef();
+  const surveyRef = useRef();
 
-  const submitHandler = () => {
-    history.push("/reports");
+  const submitHandler = async (e) => {
+    e.preventDefault();
+    const stateValue = stateRef.current.value;
+    const districtValue = districtRef.current.value;
+    const villageValue = villageRef.current.value;
+    const khataValue = khataRef.current.value;
+    const surveyValue = surveyRef.current.value;
+    await axios
+      .post(
+        url,
+        {
+          state: stateValue,
+          district: districtValue,
+          village: villageValue,
+          khata: khataValue,
+          survey: surveyValue,
+        },
+        { "Content-Type": "application/json" }
+      )
+      .then((res) => {
+        console.log(res.data);
+        history.push("/reports");
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
+
   return (
     <>
       <div className="container ">
@@ -29,36 +62,37 @@ export default function Forms() {
                   name="state"
                   defaultValue={{ label: "state" }}
                   required
+                  ref={stateRef}
                 >
                   <option>Select State</option>
-                  <option value="AN">Andhra Pradesh</option>
-                  <option value="AR">Arunachal Pradesh</option>
-                  <option value="AS">Assam</option>
-                  <option value="BH">Bihar</option>
-                  <option value="CH">Chhattisgarh</option>
-                  <option value="GO">Goa</option>
-                  <option value="GT">Gujrat</option>
-                  <option value="HR">Haryana</option>
-                  <option value="HP">Himachal Pradesh</option>
-                  <option value="JH">Jharkhand</option>
-                  <option value="KR">Karnataka</option>
-                  <option value="KA">Kerala</option>
-                  <option value="MP">Madhya Pradesh</option>
-                  <option value="MH">Maharashtra</option>
-                  <option value="MN">Manipur</option>
-                  <option value="MG">Meghalaya</option>
-                  <option value="MZ">Mizoram</option>
-                  <option value="NG">Nagaland</option>
-                  <option value="OD">Odissa</option>
-                  <option value="PN">Punjab</option>
-                  <option value="RJ">Rajasthan</option>
-                  <option value="SK">Sikkim</option>
-                  <option value="TN">Tamil Nadu</option>
-                  <option value="TG">Telengana</option>
-                  <option value="TR">Tripura</option>
-                  <option value="UT">Uttarakhand</option>
-                  <option value="UP">Uttar Pradesh</option>
-                  <option value="WB">West Bengal</option>
+                  <option value="Andhra Pradesh">Andhra Pradesh</option>
+                  <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                  <option value="Assam">Assam</option>
+                  <option value="Bihar">Bihar</option>
+                  <option value="Chhattisgarh">Chhattisgarh</option>
+                  <option value="Goa">Goa</option>
+                  <option value="Gujrat">Gujrat</option>
+                  <option value="Haryana">Haryana</option>
+                  <option value="Himachal Pradesh">Himachal Pradesh</option>
+                  <option value="Jharkhand">Jharkhand</option>
+                  <option value="Karnataka">Karnataka</option>
+                  <option value="Kerala">Kerala</option>
+                  <option value="Madhya Pradesh">Madhya Pradesh</option>
+                  <option value="Maharashtra">Maharashtra</option>
+                  <option value="Manipur">Manipur</option>
+                  <option value="Meghalaya">Meghalaya</option>
+                  <option value="Mizoram">Mizoram</option>
+                  <option value="Nagaland">Nagaland</option>
+                  <option value="Odissa">Odissa</option>
+                  <option value="Punjab">Punjab</option>
+                  <option value="Rajasthan">Rajasthan</option>
+                  <option value="Sikkim">Sikkim</option>
+                  <option value="Tamil Nadu">Tamil Nadu</option>
+                  <option value="Telengana">Telengana</option>
+                  <option value="Tripura">Tripura</option>
+                  <option value="Uttarakhand">Uttarakhand</option>
+                  <option value="Uttar Pradesh">Uttar Pradesh</option>
+                  <option value="West Bengal">West Bengal</option>
                 </Form.Control>
               </Form.Group>
               <Form.Group id="district">
@@ -67,6 +101,7 @@ export default function Forms() {
                   type="text"
                   placeholder="District Name"
                   required
+                  ref={districtRef}
                 />
               </Form.Group>
               <Form.Group id="village">
@@ -75,6 +110,7 @@ export default function Forms() {
                   type="text"
                   placeholder="Enter your village name"
                   required
+                  ref={villageRef}
                 />
               </Form.Group>
               <Form.Group id="khata">
@@ -83,6 +119,7 @@ export default function Forms() {
                   type="number"
                   placeholder="Enter your khata number"
                   required
+                  ref={khataRef}
                 />
               </Form.Group>
               <Form.Group id="survey">
@@ -91,6 +128,7 @@ export default function Forms() {
                   type="number"
                   placeholder="Enter your survey number"
                   required
+                  ref={surveyRef}
                 />
               </Form.Group>
               <div className="centerbtn">

@@ -9,6 +9,8 @@ import "./dashboard.css";
 import "./Reports.css";
 import reportIcon from "../assets/report.png";
 import resultIcon from "../assets/result.png";
+import axios from "axios";
+import { saveAs } from "file-saver";
 
 export default function Reports() {
   const dispatch = useDispatch();
@@ -30,13 +32,13 @@ export default function Reports() {
   }
   function handleForm() {
     setError("");
-    history.push("/forms");
-
-    try {
-      history.push("/dashboard");
-    } catch {
-      setError("Failed to load Page");
-    }
+    axios
+      .post("/create-pdf")
+      .then(() => axios.get("/fetch-pdf", { responseType: "blob" }))
+      .then((res) => {
+        const pdfBlob = new Blob([res.data], { type: "application/pdf" });
+        saveAs(pdfBlob, "newPdf.pdf");
+      });
   }
 
   return (
@@ -64,7 +66,7 @@ export default function Reports() {
                   >
                     Download{" "}
                     <span>
-                      <i class="fa fa-arrow-down"></i>
+                      <i className="fa fa-arrow-down"></i>
                     </span>
                   </Button>
                 </Row>
